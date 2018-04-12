@@ -53,6 +53,7 @@ class Search extends React.Component{
   render(){
     return (
       <div className="buttons">
+      <button onClick = {this.clearFilters}>Show All Cities</button>
         <div>
           <p className="button-title">Cost of Living:</p>
           <button id="1" className="button is-rounded" name="rent" value="low" onClick={(event) => {this.onToggle(event)}}>Low</button>    
@@ -87,7 +88,7 @@ class Search extends React.Component{
           <button id="17" className="button is-rounded" name="city_size" value="medium" onClick={(event) => {this.onToggle(event)}}>Mid-size city</button>
           <button id="18" className="button is-rounded" name="city_size" value="big" onClick={(event) => {this.onToggle(event)}}>Big city</button>
         </div>
-        <button onClick = {this.clearFilters}>Show All Cities</button>
+        
       </div>
     )
   }
