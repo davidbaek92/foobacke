@@ -30,6 +30,7 @@
 Keeps filter buttons fixed. Will not move on scroll
 */
 .is-one-quarter {
+  display: block;
   position: fixed;  
 }
 
@@ -40,10 +41,17 @@ Sets the margin of the cities so they do not go behind the filter buttons
   margin-left: 25%;
 }
 
+.button-title {
+  text-align: center;
+}
 
+.info {
+  color: white;  
+  font-weight: bold;  
+}
 
 button {  
-  border-radius: 12px;
+  /* border-radius: 12px; */
   border: 2px solid dodgerblue;
   padding: 6px;
   text-align: center;
